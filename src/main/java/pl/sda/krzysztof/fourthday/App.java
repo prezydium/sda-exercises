@@ -1,7 +1,5 @@
 package pl.sda.krzysztof.fourthday;
 
-import java.time.LocalDateTime;
-
 public class App {
 
     public static void main(String[] args) throws InterruptedException {
@@ -14,8 +12,21 @@ public class App {
 //        calculator.daysToChristmasEve(LocalDate.of(2023, 12, 28));
         //       calculator.minutesLeftToTheEndOfClass();
 
-        LocalDateTime dateTime = LocalDateTime.now();
-        System.out.println(dateTime);
+//        LocalDateTime dateTime = LocalDateTime.now();
+//        System.out.println(dateTime);
+
+        MyQueue<String> myStringQueue = new MyQueue<>();
+        myStringQueue.offer("Hello");
+        myStringQueue.offer("is it me");
+        myStringQueue.offer("you are looking for?");
+        myStringQueue.offer("NO!");
+        myStringQueue.printAll();
+        myStringQueue.pool();
+        System.out.println("second pool: " + myStringQueue.pool());
+        System.out.println("After removal: ");
+        myStringQueue.printAll();
+
+
     }
 
 }

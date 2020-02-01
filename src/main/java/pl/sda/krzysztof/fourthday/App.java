@@ -1,17 +1,21 @@
 package pl.sda.krzysztof.fourthday;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class App {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         TimeCalculator calculator = new TimeCalculator();
-        calculator.daysToChristmasEveInfo();
+//        calculator.daysToChristmasEveInfo();
+//
+//        calculator.daysToChristmasEve(LocalDate.of(2020, 7, 24));
+//        calculator.daysToChristmasEve(LocalDate.of(2020, 12, 23));
+//        calculator.daysToChristmasEve(LocalDate.of(2021, 2, 14));
+//        calculator.daysToChristmasEve(LocalDate.of(2023, 12, 28));
+        //       calculator.minutesLeftToTheEndOfClass();
 
-        calculator.daysToChristmasEve(LocalDate.of(2020, 7, 24));
-        calculator.daysToChristmasEve(LocalDate.of(2020, 12, 23));
-        calculator.daysToChristmasEve(LocalDate.of(2021, 2, 14));
-        calculator.daysToChristmasEve(LocalDate.of(2023, 12, 28));
+        LocalDateTime dateTime = LocalDateTime.now();
+        System.out.println(dateTime);
     }
 
 }

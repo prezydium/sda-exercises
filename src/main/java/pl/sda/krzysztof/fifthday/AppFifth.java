@@ -8,6 +8,12 @@ import java.util.Arrays;
 public class AppFifth {
 
     public static void main(String[] args) {
+        int[] testArr = {2, 5, 6, 42, 48, 422, 4424, 5000, 5003, 5043, 437434};
+        int result = BinarySearch.search(5043, testArr, 0, testArr.length - 1);
+        System.out.println("Element found on index: " + result);
+    }
+
+    private static void linearSearchExercise() {
         SoftDrink[] arrDrinks = {
                 new SoftDrink("Coca Cola", "Coca Cola Inc", 4.5),
                 new SoftDrink("Pepsi", "PepsiCo", 4.2),
@@ -24,6 +30,7 @@ public class AppFifth {
         int indexPosition = LinearSearchUtil.findFirstSoftDrink(searchedSoftDrink, arrDrinks);
 
         System.out.println("Searched drink is on: " + indexPosition);
+
     }
 
     private static void comparableTest() {

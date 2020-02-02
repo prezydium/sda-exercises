@@ -8,7 +8,22 @@ import java.util.Arrays;
 public class AppFifth {
 
     public static void main(String[] args) {
-        comparableTest();
+        SoftDrink[] arrDrinks = {
+                new SoftDrink("Coca Cola", "Coca Cola Inc", 4.5),
+                new SoftDrink("Pepsi", "PepsiCo", 4.2),
+                new SoftDrink("Mirinda", "PepsiCo", 3.5),
+                new SoftDrink("Fanta", "Coca Cola Inc", 4.35),
+                new SoftDrink("Cola Zero", "Coca Cola Inc", 4.35),
+                new SoftDrink("Polo Cola", "PoloCocta", 2.35),
+                new SoftDrink("Kompot teściowej", "Teściowa", Double.MAX_VALUE),
+                new SoftDrink("3 cytryny", "Zbyszko", 0.0),
+        };
+
+        SoftDrink searchedSoftDrink = new SoftDrink("Fanta", "Coca Cola Inc", 4.35);
+
+        int indexPosition = LinearSearchUtil.findFirstSoftDrink(searchedSoftDrink, arrDrinks);
+
+        System.out.println("Searched drink is on: " + indexPosition);
     }
 
     private static void comparableTest() {

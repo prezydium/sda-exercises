@@ -32,6 +32,4 @@ public class QuickSort {
             quickSort(arr, leftSearch, higherIndex);
         }
     }
-
-
 }

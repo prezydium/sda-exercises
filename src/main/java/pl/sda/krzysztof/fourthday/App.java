@@ -1,5 +1,7 @@
 package pl.sda.krzysztof.fourthday;
 
+import java.util.Arrays;
+
 public class App {
 
     public static void main(String[] args) throws InterruptedException {
@@ -26,7 +28,12 @@ public class App {
         System.out.println("After removal: ");
         myStringQueue.printAll();
 
-
     }
 
+
+    private static void bubbleSortTest() {
+        int[] numbers = {10, -4, 66, 3223, 34, 0, -434, 5, 5, 78};
+        BubbleSort.sort(numbers);
+        System.out.println(Arrays.toString(numbers));
+    }
 }

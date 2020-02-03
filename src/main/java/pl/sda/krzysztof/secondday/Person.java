@@ -35,6 +35,9 @@ public class Person implements Comparable<Person> {
 
     @Override
     public int compareTo(Person otherPerson) {
+        if (otherPerson == null || otherPerson.dateOfBirth == null) {
+            return Integer.MIN_VALUE;
+        }
         return this.dateOfBirth.compareTo(otherPerson.dateOfBirth);
     }
 

@@ -8,6 +8,13 @@ import java.util.Arrays;
 public class AppFifth {
 
     public static void main(String[] args) {
+        quickSortExercise();
+        comparableExercise();
+        linearSearchExercise();
+        binarySearchExercise();
+    }
+
+    private static void binarySearchExercise() {
         int[] testArr = {2, 5, 6, 42, 48, 422, 4424, 5000, 5003, 5043, 437434};
         int result = BinarySearch.search(5043, testArr, 0, testArr.length - 1);
         System.out.println("Element found on index: " + result);
@@ -33,7 +40,7 @@ public class AppFifth {
 
     }
 
-    private static void comparableTest() {
+    private static void comparableExercise() {
 
         Person personOne = new Person("John", "Smith", "123", LocalDate.of(1987, 12, 1));
         Person personTwo = new Person("Ann", "Smith", "324", LocalDate.of(2002, 6, 28));
@@ -53,7 +60,7 @@ public class AppFifth {
 
     }
 
-    private static void quickSortTest() {
+    private static void quickSortExercise() {
         int[] arrOne = {12, 5, 3, 5, 6, 3, 353, 42};
         int[] arrTwo = {12, -5, 3, 5, 2332, 13, 353, 0, 42, 55, 6666, 34};
         System.out.println("arrOne");

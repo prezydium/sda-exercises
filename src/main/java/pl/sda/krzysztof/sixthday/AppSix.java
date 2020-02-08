@@ -15,6 +15,8 @@ public class AppSix {
         List<Integer> integerList = Arrays.asList(12, 5, -5, 0, 2414, 112, 441, 121, 4);
         IntegerService.printStatistics(integerList);
 
+        IntegerService.printAllStatistics(integerList);
+
     }
 
     private static void firstTask(List<String> words) {

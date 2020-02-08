@@ -6,17 +6,11 @@ import java.util.stream.Collectors;
 
 public class AppSix {
 
-
     public static void main(String[] args) {
-/*        List<String> words = WordsProvider.provide();
-
-        thirdTask(words);*/
-
-        List<Integer> integerList = Arrays.asList(12, 5, -5, 0, 2414, 112, 441, 121, 4);
-        IntegerService.printStatistics(integerList);
-
-        IntegerService.printAllStatistics(integerList);
-
+        List<String> words = WordsProvider.provide();
+        thirdTask(words);
+        intStreamExample();
+        ternaryOperatorExample();
     }
 
     private static void firstTask(List<String> words) {
@@ -38,5 +32,18 @@ public class AppSix {
                 .map(s -> s.substring(0, 1).toUpperCase() + s.substring(1))
                 .collect(Collectors.toList());
         System.out.println(uppercaseWords);
+    }
+
+    private static void intStreamExample() {
+        List<Integer> integerList = Arrays.asList(12, 5, -5, 0, 2414, 112, 441, 121, 4);
+        IntegerService.printStatistics(integerList);
+        IntegerService.printAllStatistics(integerList);
+    }
+
+    private static void ternaryOperatorExample() {
+        NameChecker checker = new NameChecker();
+        System.out.println(checker.checkGender("Anna"));
+        System.out.println(checker.checkGender("Jakub"));
+        System.out.println(checker.checkGender("Unicorn"));
     }
 }

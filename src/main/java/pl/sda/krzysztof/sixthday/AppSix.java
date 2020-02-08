@@ -1,5 +1,6 @@
 package pl.sda.krzysztof.sixthday;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -7,9 +8,13 @@ public class AppSix {
 
 
     public static void main(String[] args) {
-        List<String> words = WordsProvider.provide();
+/*        List<String> words = WordsProvider.provide();
 
-        thirdTask(words);
+        thirdTask(words);*/
+
+        List<Integer> integerList = Arrays.asList(12, 5, -5, 0, 2414, 112, 441, 121, 4);
+        IntegerService.printStatistics(integerList);
+
     }
 
     private static void firstTask(List<String> words) {
